@@ -26,7 +26,7 @@ public class AmazonMobileAdsPlugin extends CordovaPlugin {
     private CallbackEnabledAdListener bannerAdListener;
     private ViewGroup blender;
     private ViewGroup webViewContainer;
-    private View webView;
+    //private View webView;
 
     @Override
     protected void pluginInitialize() {
