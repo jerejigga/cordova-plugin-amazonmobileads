@@ -32,11 +32,11 @@ public class AmazonMobileAdsPlugin extends CordovaPlugin {
     protected void pluginInitialize() {
 
         // look for the smoothie parent view
-        if(super.webView instanceof View) {
-            webView = (View) super.webView;
-        } else {
-            webView = (View) super.webView.getView().getParent();
-        }
+        //if(super.webView instanceof View) {
+        //    webView = (View) super.webView;
+        //} else {
+        //    webView = (View) super.webView.getView().getParent();
+        //}
         webViewContainer = (ViewGroup) webView.getParent();
         bannerAdView = new AdLayout(AmazonMobileAdsPlugin.this.cordova.getActivity(), AdSize.SIZE_320x50);
         float scale = this.cordova.getActivity().getApplicationContext().getResources().getDisplayMetrics().density;
